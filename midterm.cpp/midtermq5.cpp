@@ -37,4 +37,30 @@ int main()
     div = intDivision(num1, num2); 
     fileWrite(ofs, div);
   }
+  ofs.close();
+}
+
+void getInput(int &n1, int &n2)
+{
+  cout << "enter the 1st number: " << endl; 
+  cin >> n1; 
+  cout << "enter the 2nd number: " << endl; 
+  cin >> n2; 
+}
+int isSame(int n1, int n2)
+{
+  if (n1 == n2)
+    return(1); 
+  return(0);
+}
+
+int intDivision(int n1, int n2)
+{
+  int result;
+  if (n1 > n2)
+  {
+    result = (n1 / n2); 
+  }
+  else 
+    result
 }
