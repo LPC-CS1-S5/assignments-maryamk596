@@ -62,4 +62,4 @@ int main()
   }
 }
 // in this program i used one function to generate 10 random number in the range 1 to 50. i used a for loop in this function to generate 10 random number. 
-// then i used another function to check if the number is 
+// then i used another function to check if the number is greater then the perceding number, in this function i used a static variable to keep the perceding variable value stable so we can compare to next coming variable. i used two if statement 
