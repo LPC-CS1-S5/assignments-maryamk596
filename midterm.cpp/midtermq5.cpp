@@ -62,5 +62,24 @@ int intDivision(int n1, int n2)
     result = (n1 / n2); 
   }
   else 
-    result
+    result = (n1 / n2); 
+    return result;
+
 }
+void fileWrite (ofstream &ofs, int div)
+{
+    ofs << div << endl;
+    if(ofs.fail())
+    {
+      cerr << "File Write Errror: \n"; 
+      exit(0); 
+    }
+}
+
+// in this program i used four functions. 
+// void get input get the two integer input form the user. and used the reference variable in the parameter so the value of n1 and n2 can take the memory place of num1 and num2. 
+// isSame function is used to see if the two number are the same, if so the program stop. 
+// intDivision function does the division operation of the variables, for dividing the larger variable to smaller value size. 
+// the i used a write file function to create a txt file so the number and the result should be writtern on that file. 
+
+// and in the main funtion i initialized the variables and created the txt file. 
