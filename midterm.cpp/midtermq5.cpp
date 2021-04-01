@@ -9,3 +9,32 @@
 
 //the number of parameters, parameter data type, return value and type, and so on.
 #include <iostream> 
+#include <fstream>
+using namespace std; 
+
+void getInout(int &, int &); 
+int isSame(int, int);
+int intDivision(int, int); 
+void fileWrite(ofstream &, int);
+
+int main()
+{
+  int num1, num2; 
+  int div; 
+
+  ofstream ofs;
+  ofs.open("question5.txt");
+  if (ofs.fail())
+  {
+    cerr << "File open Error\n"; 
+    exit(0);
+  }
+  while(1)
+  {
+    getInput(num1, num2); 
+    if (isSame(num1, num2))
+      break; 
+    div = intDivision(num1, num2); 
+    fileWrite(ofs, div);
+  }
+}
