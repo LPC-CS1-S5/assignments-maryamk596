@@ -1,3 +1,6 @@
+//[2] Make the program that reads the student’s name(string) and two scores(integer) from the text file “students.txt” (Links to an external site.).
+//Each record of the student has the three fields as follows:
+
 #include <fstream>
 #include <iostream>
 using namespace std;
