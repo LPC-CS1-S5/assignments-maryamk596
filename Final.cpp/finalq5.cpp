@@ -160,7 +160,7 @@ int main()
   ifs.open ("grades.bin");
   if (! ifs ){
     cout << "File Open Error : Sure that there is the file grades.bin \n";
-    exit (0);
+    exit (0); 
   }
 
   while ( ifs.read((char *)&g, sizeof(g))){
